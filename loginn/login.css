@@ -1,0 +1,199 @@
+
+ /*--------- Offer Section -----------*/
+
+/*------------footer css --------------*/
+.footer {
+  background-color: black;
+  color: pink;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: -20px; /* Adjust the value to remove the gap */
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.box {
+  flex-basis: 25%;
+  text-align: left;
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: pink ;
+}
+
+.box a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin-bottom: 5px;
+  color: pink;
+  font-size: 15px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.box a i {
+  margin-right: 5px;
+  transition: .2s linear;
+}
+
+.box a:hover {
+  margin-left: 10px; /* Adjust the margin value as desired */
+  color: white;
+}
+.footer .box-container .box a:hover i{
+  padding-right: 1.5rem;
+}
+
+.credit {
+  padding-top: 20px;
+  text-align: center;
+  border-top: .2rem solid white;
+  padding-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.credit span {
+  color: pink;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    display: none;
+  }
+
+  #menu-btn {
+    display: flex;
+  }
+}
+
+
+/* for form*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  perspective: 1000px;
+}
+
+.form {
+  position: relative;
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fade-in 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.form h1 {
+  padding: 5%;
+  text-align: center;
+  color: #ff6090;
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6090;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #ff4574;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+}
+
+.remember-me label {
+  margin-left: 2px;
+  font-size: 11px;
+}
+
+.forgot-password {
+  color: #ff6090;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: palevioletred;
+}
+
+.form-switch {
+  text-align: center;
+}
+
+.form-switch p {
+  margin-top: 10px;
+}
+
+.form-switch a {
+  color: #ff6090;
+  text-decoration: none;
+}
+
+.form-switch a:hover {
+  text-decoration: underline;
+}
+
+#signup-form {
+  display: none;
+}
+
+#signup-form.flip-to-login {
+  transform: rotateY(180deg);
+}
+
+#login-form.flip-to-signup {
+  transform: rotateY(180deg);
+}
+
+
+
